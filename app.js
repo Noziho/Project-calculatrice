@@ -15,6 +15,11 @@ let opeLess = document.getElementById("n-");
 let opeMulti = document.getElementById("n*");
 let opeDivi = document.getElementById("n%");
 let opeEgal = document.getElementById("n=");
+let opePar = document.getElementById("n(");
+let opePar2 = document.getElementById("n)")
+let reset = document.getElementById("reset");
+let opeVir = document.getElementById("n.");
+
 
 num1.addEventListener("click", function () {
     input.value += 1;
@@ -72,8 +77,24 @@ opeDivi.addEventListener("click", function (){
     input.value += "%";
 })
 
-opeEgal.addEventListener("click", function () {
+opePar.addEventListener("click", function (){
+    input.value += "(";
+})
 
+opePar2.addEventListener("click", function () {
+    input.value += ")";
+})
+
+opeVir.addEventListener("click", function (){
+    input.value += ".";
+})
+
+opeEgal.addEventListener("click", function () {
+    input.value = eval(input.value);
+})
+
+reset.addEventListener("click", function (){
+    input.value = null;
 })
 
 
