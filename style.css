@@ -11,17 +11,26 @@ body {
 
 #container {
     width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
 
+}
+
+#containerIMG {
+    width: 100%;
 }
 
 #item {
     width: 25%;
     display: flex;
     flex-flow: wrap row;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-    justify-items: center;
+    margin-top: 5%;
+
+
 }
 
 #mathGIF {
@@ -36,9 +45,9 @@ label {
 }
 button {
     width: 30%;
-    height: 30%;
+    height: 5rem;
 }
 
 #enterANumber {
-    width: 70%;
+    width: 88%;
 }
