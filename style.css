@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #222;
+}
+
+#container {
+    width: 100%;
+
+}
+
+#item {
+    width: 25%;
+    display: flex;
+    flex-flow: wrap row;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+#mathGIF {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+label {
+    color: white;
+    font-size: 1.6rem;
+}
+button {
+    width: 30%;
+    height: 30%;
+}
+
+#enterANumber {
+    width: 70%;
+}
